@@ -1,9 +1,41 @@
-p{
-    color: lightgreen;
+p#main{
+    color: rgb(247, 12, 12);
 }
 
 h1{
     color: orangered;
-    font-size: 80px;
+    font-size: 5vw;
     font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    text-shadow:0 0 5px palegoldenrod;
+}
+a{
+    text-decoration: none;
+}
+.s{
+    color: skyblue;
+}
+.hako{
+    background-color: cornflowerblue;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+
+
+}
+.hako2{
+    background-color: darkorange;
+    border-radius: 10px;
+    text-align: center;
+}
+.clover{
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    border-radius:  110%;
+    position: absolute;
+    left: 50px;
+    top: 700px;
+    margin: 10%;
 }
