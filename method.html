@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関数とクラス</title>
+</head>
+<body>
+    
+    <script>
+        'use strict';
+
+        //アロー関数
+        // () => {}
+
+        // const addTwoNum = (x,y) => {
+        //     return x + y;
+        // };
+        // console.log(addTwoNum(3,4));
+
+        // class Cluculator{
+        //     constructor(x,y){
+        //       this.x = x;
+        //       this.y = y;
+        //     }
+        //     addTwoNum(){
+        //         return this.x + this.y;
+        //     }
+        //     addTwoNum2(){
+        //         return this.x * this.y;
+        //     }
+        //     addTwoNum3(){
+        //         return this.x + this.y + this.x;
+        //     }
+        // }
+
+        // const Calc = new Cluculator(3,4);
+        // console.log(Calc.addTwoNum());
+        // console.log(Calc.addTwoNum2());
+        // const Calc2 = new Cluculator(3,15);
+        // console.log(Calc2.addTwoNum());
+        // console.log(Calc2.addTwoNum3());
+
+        // class SuperNaming{
+        //     constructor(){
+        //         this.name = "田中";
+        //     }
+        // outputName(){
+        //     return this.name;
+        // }
+        // }
+        // class SubGreeting extends SuperNaming{
+        //     outputName(){
+        //         return super.outputName() + "ヒメ";
+        //     }
+        //     outputHello(){
+        //         return "Hello!!";
+        //     }
+        // }
+        // const Greetig = new SubGreeting;
+        // console.log(Greetig.outputHello() + Greetig.outputName());
+
+
+        class Naming {
+            constructor(x){
+                this.name = ["山田","田中","林",x];
+            }
+            result(i){
+                return this.name[i];
+            }
+        }
+        const outputName = new Naming("佐藤");
+        for(let i = 0; i < outputName.name.length; i++){
+            console.log(outputName.result(i));
+        }
+
+
+    </script>
+</body>
+</html>
